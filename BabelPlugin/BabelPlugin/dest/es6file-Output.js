@@ -1,5 +1,17 @@
 'use strict';
 
-var someconstant = 'HOME';
-var someconstant1 = 'HOME';
-var someconstant2 = 'HOME23';
+var trueInSources = false;
+
+var trueInSources2CSV = false,
+    falseInSourcesCSV = true,
+    trueInsources3 = false;
+
+var trueString = 'true',
+    faslseString = 'false',
+    trueString2 = "True",
+    falseString2 = "False";
+
+var capitalTrue = True;
+var capitalFalse = False;
+
+if (a === true) {}

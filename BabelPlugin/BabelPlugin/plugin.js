@@ -5,8 +5,12 @@ module.exports = function (_ref) {
 
     return {
         visitor: {
-            StringLiteral: function StringLiteral(path, state) {
-                path.node.value = path.node.value.toUpperCase();
+            VariableDeclarator: function VariableDeclarator(path, state) {
+                if (path.node.init.value === true) {
+                    path.node.init.value = false;
+                } else if (path.node.init.value === false) {
+                    path.node.init.value = true;
+                }
             }
         }
     };
